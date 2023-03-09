@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --white-clr: hsl(0, 0%, 100%);
+
+    --ff-poppins: 'Poppins', sans-serif;
+    --ff-open-sans:  'Poppins', sans-serif;
+}
+
+body{
+    background: var(--Violet)  url(images/bg-mobile.svg);
+    color: var(--white-clr);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.logo{
+    max-width: 7rem;
+    margin: 2rem 5rem 2rem 2rem;
+}
+
+.mockups{
+    max-width: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,
+p{
+    text-align: center;
+}
+
+h1{
+    margin-top: 4rem;
+    font-family: var(--ff-poppins);
+    font-size: 1.5rem;
+    white-space: pre-line;
+}
+
+p{
+    margin-top: 1.5rem;
+    font-family: var(--ff-open-sans);
+    padding: 0 2.8rem;
+}
+
+button{
+    
+    border: none;
+    font-family: var(--ff-poppins);
+    color: var(--Violet);
+    padding: .5rem 4rem;
+    border-radius: 1rem;
+    box-shadow: -3px 3px 33px 0px rgba(0,0,0,0.29);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--Soft-Magenta);
+    color: var(--white-clr);
+}
+
+.social-icons{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons svg{
+    fill: white;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.social-icons svg:hover{
+    fill: var(--Soft-Magenta);
+}
+
+@media (min-width: 900px) {
+
+    body{
+        background: var(--Violet) url(images/bg-desktop.svg);
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+    }
+
+    .logo{
+        max-width: 13rem;
+        margin-bottom: 4rem
+    }
+
+    .mockups{
+        max-width: 100%;
+        margin-left: 2rem;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+       
+    }
+
+    h1{
+        font-size: 2.5rem;
+        margin-left: -4rem;
+    }
+
+    p{
+        white-space: pre-line;
+       
+    }
+   
+
+    .btn-wrap{
+        text-align: left;
+        margin-left: 8rem;
+    }
+
+    button{
+        padding: 1rem 4rem;
+        border-radius: 2rem;
+    }
+
+    .social-icons{
+        justify-content: end;
+        margin-right: 4rem;
+    }
+
+
+    .social-icons svg{
+        fill: white;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+      
+}
